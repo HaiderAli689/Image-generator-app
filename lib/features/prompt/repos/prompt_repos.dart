@@ -6,11 +6,11 @@ import 'package:dio/dio.dart';
 class PromptRepo {
   static Future<Uint8List?> generateImage(String prompt) async {
     try {
-      String url = 'https://api.vyro.ai/v1/imagine/api/generations';
+      String url = '';
 
       Map<String, dynamic> headers = {
         'Authorization':
-            'Bearer vk-TD6PM3NoykhmM44OBbyPmvFWlRXY9xJuee6t4FcsQDm5o'
+            'Bearer '
       };
       Map<String, dynamic> payloads = {
         'prompt': prompt,
